@@ -20,7 +20,6 @@ gem 'bcrypt', '3.1.11'
 gem 'rails-controller-testing'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'carrierwave'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
