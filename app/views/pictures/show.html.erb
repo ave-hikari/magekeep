@@ -5,6 +5,10 @@
   <%= @picture.description %>
 </p>
 <p>
+  <strong>User:</strong>
+  <%= @picture.user_id %>
+</p>
+<p>
    <strong>Picture:</strong>
    <!--- Modelのstyleで指定した :midium など渡すことでサイズを指定できる -->
    <%= image_tag @picture.photo.url(:medium) %>
