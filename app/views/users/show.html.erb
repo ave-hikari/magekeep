@@ -8,4 +8,13 @@
       </h1>
     </section>
   </aside>
+  <div class="col-md-8">
+    <% if @user.pictures.any? %>
+      <h3>Pictures (<%= @user.pictures.count %>)</h3>
+      <ol class="microposts">
+        <%= image_tag @user.pictures.first.photo.url(:medium) %>
+        <%= @user.pictures.first.description %>
+      </ol>
+    <% end %>
+  </div>
 </div>
