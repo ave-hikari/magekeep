@@ -12,8 +12,7 @@
     <% if @user.pictures.any? %>
       <h3>Pictures (<%= @user.pictures.count %>)</h3>
       <ol class="microposts">
-        <%= image_tag @user.pictures.first.photo.url(:medium) %>
-        <%= @user.pictures.first.description %>
+        <%= render @pictures %>
       </ol>
     <% end %>
   </div>
