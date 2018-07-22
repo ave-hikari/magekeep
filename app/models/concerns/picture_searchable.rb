@@ -5,7 +5,7 @@ module PictureSearchable
     include Elasticsearch::Model
 
     # インデックスするフィールドの一覧
-    INDEX_FIELDS = %w(title body).freeze
+    INDEX_FIELDS = %w(description).freeze
 
     # インデックス名
     index_name "es_sample_article_#{Rails.env}"
