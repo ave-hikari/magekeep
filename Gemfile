@@ -21,6 +21,8 @@ gem 'rails-controller-testing'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'paperclip'
+gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

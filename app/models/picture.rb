@@ -1,6 +1,7 @@
 class Picture < ApplicationRecord
   belongs_to :user
-  
+  include PictureSearchable
+
   # photoをattachファイルとする。stylesで画像サイズを定義できる
   has_attached_file :photo,
     styles: { medium: "300x300>", thumb: "100x100>" },
@@ -12,4 +13,6 @@ class Picture < ApplicationRecord
     presence: true,
     less_than: 5.megabytes, # ファイルサイズのチェック
     content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
+
+  validates :description, presence: true, length: { maximum: 140 }
 end
