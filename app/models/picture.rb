@@ -14,5 +14,6 @@ class Picture < ApplicationRecord
     less_than: 5.megabytes, # ファイルサイズのチェック
     content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
 
-  validates :description, presence: true, length: { maximum: 140 }
+  validates :user_id, presence: true
+  validates :description, length: { maximum: 200 }
 end
